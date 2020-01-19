@@ -1,0 +1,4 @@
+#Sun Jan 19 09:19:29 IST 2020
+base.0=C\:\\Users\\ICT_Level3.LAB_151\\Desktop\\Facebook\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
