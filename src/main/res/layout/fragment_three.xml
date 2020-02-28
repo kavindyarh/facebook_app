@@ -5,4 +5,10 @@
     android:background="#181717"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/viewAllRecords"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
 </LinearLayout>

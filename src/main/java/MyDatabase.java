@@ -50,6 +50,12 @@ public class MyDatabase extends SQLiteOpenHelper{
         return false;
     }
 
+    public Cursor getAllRecords(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor resultSet = db.rawQuery("select * from student",null);
+        return  resultSet;
+    }
+
     }
 }
 
