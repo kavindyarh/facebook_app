@@ -34,6 +34,22 @@ public class MyDatabase extends SQLiteOpenHelper{
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
+        db.execSQL(DROP_TABLE);
+        onCreate(db);
+    }
+    public boolean insertData(String Name,String Age,String Marks){
+        try (SQLiteDatabase db = this.getWritableDatabase()) {
+            ContentValues contentValues=new ContentValues();
+            contentValues.put(u_name,Name);
+            contentValues.put(u_age,Age);
+            contentValues.put(u_marks,Marks);
+            long result=db.insert(TABLE_NAME,null,contentValues);
+            if (result== -1)
+                return true;
+        }
+        return false;
+    }
+
     }
 }
 
